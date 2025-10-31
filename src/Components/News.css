@@ -375,7 +375,7 @@
   .blog-posts {
     overflow-y: scroll;
   }
-  .blog-post::-webkit-scrollbar {
+  .blog-posts::-webkit-scrollbar {
     display: none;
   }
   .blog-post {
@@ -387,6 +387,9 @@
   .news-grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
+  }
+  .blog-posts::-webkit-scrollbar{
+    display: none;
   }
 }
 
