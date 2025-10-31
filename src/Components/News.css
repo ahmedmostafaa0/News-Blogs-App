@@ -1,0 +1,498 @@
+.news {
+  font-size: 2rem;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.news-header {
+  width: 100%;
+  min-height: 7rem;
+  background-color: #111214;
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5rem;
+  color: #ddd;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar input {
+  width: 25rem;
+  height: 4rem;
+  background-color: #060709;
+  border: none;
+  border-radius: 5rem;
+  padding: 0 4rem 0 2rem;
+  color: #ddd;
+  transition: width 0.3s;
+}
+
+.search-bar input:focus {
+  width: 35rem;
+}
+
+.search-bar input:focus::placeholder {
+  color: transparent;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: #bbb;
+  font-size: 1.8rem;
+}
+
+.news-content {
+  height: calc(100% - 16rem);
+  display: flex;
+  padding: 0 2rem;
+  column-gap: 2rem;
+}
+
+.navbar {
+  width: 18rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.user {
+  width: 100%;
+  height: 20%;
+  border-radius: 1rem;
+  background-color: #111214;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.user img {
+  width: 7rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user p {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+.categories {
+  width: 100%;
+  height: calc(80% - 2rem);
+  background-color: #111214;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.nav-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(1.5rem, 2.5cqi, 3rem);
+  letter-spacing: 0.2rem;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ddd;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link i {
+  font-size: 1.7rem;
+  margin-left: 1rem;
+}
+.news-section {
+  width: clamp(30rem, 43cqi, 40%);
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.headline {
+  width: 100%;
+  height: calc(50% - 2rem);
+  margin-bottom: 2rem;
+  background-color: #111214;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.headline img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  opacity: 0.4;
+}
+
+.headline-title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 4rem 1rem 1rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(1.5rem, 1.8cqi, 3rem);
+  letter-spacing: 0.1rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.bookmark {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.no-results,
+.loading {
+  display: grid;
+  place-items: center;
+  font-size: 4rem;
+  height: 100%;
+  color: #888;
+}
+
+.news-grid {
+  width: 100%;
+  height: 50%;
+  background-color: #111214;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-grid-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.news-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 1rem;
+  opacity: 0.5;
+}
+
+.news-grid-item h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 3rem 1rem 1rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  border-radius: 0 0 1rem 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.my-blogs {
+  width: clamp(20rem, 27cqi, 28%);
+  height: 100%;
+  background-color: #111214;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+.my-blogs-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: #ddd;
+  letter-spacing: 0.1rem;
+  padding: 2rem;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.2rem;
+  padding: 1.2rem;
+}
+.blog-post {
+  flex: 0 1 calc(50% - 0.6rem);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.blog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  opacity: 0.5;
+}
+
+.my-blogs h3 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+.post-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0;
+  visibility: none;
+  transition: all 0.3s;
+}
+
+.blog-post:hover .post-buttons {
+  opacity: 1;
+  visibility: visible;
+}
+
+.post-buttons button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.weather-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.footer {
+  width: 100%;
+  min-height: 5rem;
+  background-color: #111214;
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.footer p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #bbb;
+}
+.footer-brand {
+  text-transform: capitalize;
+}
+
+.footer-copy {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+@media (max-width: 1400px) {
+  .nav-links {
+    gap: 1.3rem;
+  }
+
+  .news-section {
+    overflow: hidden;
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    overflow-y: scroll;
+  }
+  .news-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .blog-posts {
+    overflow-y: scroll;
+  }
+  .blog-post::-webkit-scrollbar {
+    display: none;
+  }
+  .blog-post {
+    flex: 0 1 calc(100% - 0.6rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .news-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .news {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .news::-webkit-scrollbar {
+    display: none;
+  }
+  .news-content{
+    flex-direction: column;
+    width: 100%;
+    height: 200rem;
+    gap: 2rem;
+  }
+  .navbar{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 18rem;
+  }
+  .user{
+    width: calc(30% - 2rem);
+    height: 100%;
+  }
+  .categories{
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .nav-links{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-link{
+    margin-right: 2rem;
+  }
+  .news-section{
+    width: 100%;
+  }
+  .news-grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .my-blogs{
+    width: 100%;
+  }
+  .blog-post{
+    flex: 0 1 calc(50% - .6rem)
+  }
+  .weather-calendar{
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .news-header{
+    padding: 0 2rem;
+  }
+  .logo{
+    font-size: 3.5rem;
+  }
+  .search-bar input{
+    width: 18rem;
+  }
+  .search-bar input:focus{
+    width: 23rem;
+  }
+  .navbar{
+    flex-direction: column;
+    height: 30rem;
+    margin-bottom: 2rem;
+  }
+  .user{
+    width: 100%;
+    min-height: 40%;
+  }
+  .user p{
+    display: none;
+  }
+  .categories{
+    width: 100%;
+  }
+  .nav-heading{
+    display: none;
+  }
+
+  .news-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .weather-calendar{
+    flex-direction: column;
+  }
+  .footer{
+    min-height: 8rem;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+  }
+}
